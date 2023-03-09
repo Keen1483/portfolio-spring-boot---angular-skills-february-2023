@@ -11,6 +11,7 @@ import { ExperiencesComponent } from './component/experiences/experiences.compon
 import { WorksComponent } from './component/works/works.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { FourOhFourComponent } from './component/four-oh-four/four-oh-four.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './component/footer/footer.component';
     ExperiencesComponent,
     WorksComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    FourOhFourComponent
   ],
   imports: [
     BrowserModule,
