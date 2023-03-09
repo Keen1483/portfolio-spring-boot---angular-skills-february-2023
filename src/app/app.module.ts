@@ -12,6 +12,9 @@ import { WorksComponent } from './component/works/works.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { FourOhFourComponent } from './component/four-oh-four/four-oh-four.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { FourOhFourComponent } from './component/four-oh-four/four-oh-four.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
