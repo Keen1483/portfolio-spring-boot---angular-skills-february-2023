@@ -1,0 +1,60 @@
+mat-toolbar {
+    background: #151E32;
+
+    button {
+        color: #fff;
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b6bcd8;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.active {
+    border: 1px solid #fff;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.leftLinks {
+    padding: 0;
+    margin-bottom: 10px;
+
+    .brand {
+        width: 58px;
+    }
+    .github {
+        width: 24px; 
+    
+    }
+
+    li:last-child {
+        margin-inline-start: 1.5rem;
+        @media (max-width: 768px) {
+            margin-right: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .rightLinks {
+        display: none;
+    }
+
+    .leftLinks {
+        width: 100%;
+    }
+}

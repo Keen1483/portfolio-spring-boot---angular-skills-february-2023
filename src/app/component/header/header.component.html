@@ -2,4 +2,31 @@
     <button mat-icon-button>
         <mat-icon>menu</mat-icon>
     </button>
+    <ul class="leftLinks">
+        <li>
+            <a routerLink="">
+                <img class="brand" src="./assets/images/logo.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/" target="_blank">
+                <img class="github" src="./assets/images/github.png" alt="">
+            </a>
+        </li>
+    </ul>
+    <span class="spacer"></span>
+    <ul class="rightLinks">
+        <li>
+            <a mat-button [routerLink]="[ '/skills' ]" routerLinkActive="active">Skills</a>
+        </li>
+        <li>
+            <a mat-button [routerLink]="[ '/experiences' ]" routerLinkActive="active">Experiences</a>
+        </li>
+        <li>
+            <a mat-button [routerLink]="[ '/works' ]" routerLinkActive="active">Works</a>
+        </li>
+        <li>
+            <a mat-button [routerLink]="[ '/contact' ]" routerLinkActive="active">Contact</a>
+        </li>
+    </ul>
 </mat-toolbar>
