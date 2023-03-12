@@ -1,17 +1,39 @@
-body {
-    margin: 0 0;
-    padding: 0 0;
-    background: #151E32;
-}
-.wrapper {
+$bg-color: #151E32;
+$text-color: #9ba2c2;
+
+mat-sidenav-container {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #151E32;
+    background: $bg-color;
+    margin-bottom: -18px;
 }
 .container {
-    width: 70%;
+    width: 50%;
     margin: auto;
-    color: #8990AE;
+    color: $text-color;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    box-sizing: border-box;
+    line-height: 150%;
+    font-weight: 300;
+
+    @media (max-width: 1200px) {
+        width: 75%;
+    }
+    @media (max-width: 768px) {
+        width: 85%;
+        padding: 2.5rem 1rem 0 1rem;
+    }
+    @media (max-width: 576px) {
+        width: 90%;
+        padding: 2rem 0rem 0 0rem;
+    }
+}
+
+mat-sidenav {
+    min-width: 300px;
+    @media (max-width: 576px) {
+        min-width: 240px;
+    }
 }

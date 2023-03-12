@@ -1,1 +1,96 @@
-<p>experiences works!</p>
+<div>
+    <h2 class="mat-display-2">Experiences</h2>
+
+    <div class="freelance">
+        As a proactive freelancer, I regularly work with clients who have various needs. Some want a complete application, others just want a part to complete the existing application.
+        <ul>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Add a new microservice to the application
+            </li>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Update the framework version and modify obsolete code
+            </li>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Templates with Angular Material to improve the user experience
+            </li>
+        </ul>
+        <p>
+            <a href="https://github.com/Keen1483/Microservice-Spring-Boot-for-user-management---JWT-Security---consumed-by-Angular-app" target="_blank">You will find a Git repository here as an illustration of a microservice</a>
+        </p>
+        <p>
+            <a href="https://github.com/Keen1483/Upgrade-Spring-Boot-version-of-Microservice-Spring-Boot-for-user-management---JWT-Security---consume" target="_blank">You will find a Git repository here to illustrate the upgrade of the framework version of the previous microservice</a>
+        </p>
+        <p>
+            <a href="https://github.com/Keen1483/Frontend-of-Microservice-Spring-Boot-for-user-management---JWT-Security---consumed-by-Angular-app-pr" target="_blank">You will find a Git repository here as an illustration of the awesome frontend that consumes the two previous backends</a>
+        </p>
+    </div>
+
+    <div class="companies">
+        Besides freelancing, I also work in companies
+        <p class="company">2021 - Now: Socsuba (commercial company)</p>
+        <ul>
+            I build for the company
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Web applications and Android WebViews with the Java language
+            </li>
+            <a href="https://github.com/Keen1483/Odoo-ERP-Android-Native-Application" target="_blank">You will find here a Git repository as an illustration</a>
+
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Mobile frontends with Ionic / Angular that consume the Odoo ERP backend
+            </li>
+            <a href="https://github.com/Keen1483/Odoo-ERP-Mobile-Android-Hybrid-Application" target="_blank">You will find here a Git repository as an illustration</a>
+
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Odoo applications and modules. Development of commercial modules with a PDF and Excel report for the accounting department
+            </li>
+            <a href="https://github.com/Keen1483/Odoo-sales-support-applications" target="_blank">You will find here a Git repository as an illustration</a>
+        </ul>
+
+        <p class="company">2020 - 2021: Leckpa Group (digital services company)</p>
+        <ul>
+            I helped the company to build
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Web applications with a Java or PHP backend with an Ionic / Angular frontend
+            </li>
+            <a href="https://github.com/Keen1483/Application-de-difusion-de-news" target="_blank">You will find here a Git repository as an illustration</a>
+        </ul>
+
+        <p class="company">2019 - 2020: Ministry of Water and Energy (Cameroon)</p>
+        <ul>
+            I participated in the development of
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                The web application for the management of hydrolytic monographs in rural areas with the Symfony / PHP framework
+            </li>
+            <a href="assets/pdf/FICHE-DE-PROJET-MONOGRAPHIE-HYDROLIQUE.pdf" target="_blank">You can download here the project form in PDF</a><br>
+            <a href="https://github.com/Keen1483/Hydrolytic-monographs-in-rural-areas" target="_blank">You will find here a Git repository as an illustration</a>
+        </ul>
+
+        <p class="company">2018 - 2019: Young dynamic people of Yaoundé (Association of people)</p>
+        <ul>
+            I developed and maintained
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                A web application for fundraising, loan management, interest calculation; with PHP and ORM built by myself
+            </li>
+            <a href="https://github.com/Keen1483/D-but-d-application-d-une-r-union" target="_blank">You will find here a Git repository as an illustration</a>
+        </ul>
+    </div>
+
+    <p>{{ mainService.thankMessage }}</p>
+    <a
+        routerLink="/contact"
+        mat-button
+        matTooltip="Click to write a message"
+        matTooltipShowDelay="500"
+        matTooltipHideDelay="1000"
+        class="active">{{ mainService.contactLabel }}
+    </a>
+</div>

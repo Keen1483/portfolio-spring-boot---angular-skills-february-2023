@@ -1,3 +1,5 @@
+$active-color: #52B09E;
+
 mat-toolbar {
     background: #151E32;
 
@@ -22,7 +24,7 @@ ul {
 }
 
 .active {
-    border: 1px solid #fff;
+    border: 1px solid $active-color;
 }
 
 .spacer {

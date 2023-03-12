@@ -1,0 +1,29 @@
+$active-color: #52B09E;
+
+li {
+    list-style-type: none;
+    mat-icon {
+        font-size: 14px;
+    }
+}
+
+.name {
+    color: #c3c8e1;
+}
+
+.profession {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.overview {
+    margin-bottom: 2rem;
+    
+    a {
+        color: #368dda;
+    }
+}
+
+a.active {
+    border: 1px solid $active-color;
+}

@@ -1,1 +1,51 @@
-<p>home works!</p>
+<div class="home">
+    <p class="greeting active">Hi, my name is</p>
+
+    <h2 class="mat-display-2 name">Bernard Geraud Dongmo</h2>
+
+    <div>
+        <span class="mat-display-1 profession">I develop backend and frontend web applications.</span>
+        
+        I am a full stack Spring Boot / Angular web dveloper.
+        I can help you to build an API REST with a smart frontend in very short time.
+        If you would rather build a part of your application, I can help you to:
+        <ul>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Build a secure backend that can be used by any frontend
+            </li>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Build a smart frontend with a beautiful design to consume your backend
+            </li>
+        </ul>
+        If you want to update your application or upgrade the version of the framework used to build it, I can help you to:
+        <ul>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Upgrade the Spring Boot version and change the deprecated code
+            </li>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Upgrade the Angular version and change the deprecated code
+            </li>
+            <li>
+                <mat-icon>check_circle</mat-icon>
+                Add new features to your application
+            </li>
+        </ul>
+        I am currently working on building microservices and for a commercial company (Socsuba).
+    </div>
+
+    <p class="overview"><a href="https://appavenue-53413.web.app" target="_blank">Check this website for an overview</a></p>
+
+    <p>{{ mainService.thankMessage }}</p>
+    <a
+        routerLink="/contact"
+        mat-button
+        matTooltip="Click to write a message"
+        matTooltipShowDelay="500"
+        matTooltipHideDelay="1000"
+        class="active">{{ mainService.contactLabel }}
+    </a>
+</div>

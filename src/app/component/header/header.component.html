@@ -1,5 +1,5 @@
 <mat-toolbar>
-    <button mat-icon-button>
+    <button mat-icon-button (click)="navOpen()">
         <mat-icon>menu</mat-icon>
     </button>
     <ul class="leftLinks">
@@ -9,7 +9,7 @@
             </a>
         </li>
         <li>
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/Keen1483?tab=repositories" target="_blank">
                 <img class="github" src="./assets/images/github.png" alt="">
             </a>
         </li>
@@ -17,16 +17,19 @@
     <span class="spacer"></span>
     <ul class="rightLinks">
         <li>
+            <a mat-button [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a>
+        </li>
+        <li>
             <a mat-button [routerLink]="[ '/skills' ]" routerLinkActive="active">Skills</a>
         </li>
         <li>
             <a mat-button [routerLink]="[ '/experiences' ]" routerLinkActive="active">Experiences</a>
         </li>
         <li>
-            <a mat-button [routerLink]="[ '/works' ]" routerLinkActive="active">Works</a>
+            <a mat-button [routerLink]="[ '/contact' ]" routerLinkActive="active">Contact</a>
         </li>
         <li>
-            <a mat-button [routerLink]="[ '/contact' ]" routerLinkActive="active">Contact</a>
+            <a mat-button [routerLink]="[ '/mails' ]" routerLinkActive="active" *ngIf="authService.isLogged()">Mails</a>
         </li>
     </ul>
 </mat-toolbar>

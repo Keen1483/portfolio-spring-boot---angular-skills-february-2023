@@ -1,0 +1,28 @@
+div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #a9c6c1;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a1328;
+    padding: 0.8rem 1.5rem 0.8rem 0;
+    @media (max-width: 576px) {
+        padding: 0.5rem 1rem 0.5rem 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+img {
+    width: 24px;
+}
+
+button.copyright {
+    cursor: none;
+}

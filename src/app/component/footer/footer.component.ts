@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  year = new Date().getFullYear();
+
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    this.dialog.open(LoginComponent);
   }
 
 }

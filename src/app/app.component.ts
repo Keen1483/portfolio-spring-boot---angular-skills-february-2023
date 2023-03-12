@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { initializeApp } from 'firebase/app';
 
 declare var $: any;
 
@@ -9,6 +10,21 @@ declare var $: any;
 })
 export class AppComponent implements OnInit {
   title = 'bernard-geraud';
+
+  constructor() {
+    const firebaseConfig = {
+      apiKey: "AIzaSyAwmvzgxebTwJbDUrxAtiC0446xwzjaOng",
+      authDomain: "myapp-29fa0.firebaseapp.com",
+      databaseURL: "https://myapp-29fa0-default-rtdb.firebaseio.com",
+      projectId: "myapp-29fa0",
+      storageBucket: "myapp-29fa0.appspot.com",
+      messagingSenderId: "718132531498",
+      appId: "1:718132531498:web:bd3b80bc90b0ac7e1bce53"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  }
 
   ngOnInit(): void {
     $(document).ready(() => {

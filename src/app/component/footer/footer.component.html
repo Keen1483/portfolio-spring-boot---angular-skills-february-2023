@@ -1,1 +1,26 @@
-<p>footer works!</p>
+<div>
+    <ul>
+        <li>
+            <button mat-button>
+                <mat-icon>phone</mat-icon>
+            </button>
+            +237670142491
+        </li>
+        <li>
+            <button mat-button>
+                <mat-icon>email</mat-icon>
+            </button>
+            keenndjc@gmail.com
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/bernard-geraud-dongmo" target="_blank">
+                <img src="./assets/images/linkedin.png">
+            </a>
+        </li>
+        <li>
+            <button mat-button (click)="openDialog()" class="copyright">
+                <span>&copy;</span> {{ year }}
+            </button>
+        </li>
+    </ul>
+</div>
