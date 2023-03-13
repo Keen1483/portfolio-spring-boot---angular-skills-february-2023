@@ -17,16 +17,16 @@
     <span class="spacer"></span>
     <ul class="rightLinks">
         <li>
-            <a mat-button [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a>
+            <a mat-button [routerLink]="[ '/home' ]" routerLinkActive="active">{{ 'nav.home' | translate }}</a>
         </li>
         <li>
-            <a mat-button [routerLink]="[ '/skills' ]" routerLinkActive="active">Skills</a>
+            <a mat-button [routerLink]="[ '/skills' ]" routerLinkActive="active">{{ 'nav.skills' | translate }}</a>
         </li>
         <li>
-            <a mat-button [routerLink]="[ '/experiences' ]" routerLinkActive="active">Experiences</a>
+            <a mat-button [routerLink]="[ '/experiences' ]" routerLinkActive="active">{{ 'nav.experiences' | translate }}</a>
         </li>
         <li>
-            <a mat-button [routerLink]="[ '/contact' ]" routerLinkActive="active">Contact</a>
+            <a mat-button [routerLink]="[ '/contact' ]" routerLinkActive="active">{{ 'nav.contact' | translate }}</a>
         </li>
         <li>
             <a mat-button [routerLink]="[ '/mails' ]" routerLinkActive="active" *ngIf="authService.isLogged()">Mails</a>

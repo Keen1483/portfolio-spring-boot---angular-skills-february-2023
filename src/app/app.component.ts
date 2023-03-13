@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { initializeApp } from 'firebase/app';
+import { TranslateService } from '@ngx-translate/core';
+import { MatSelectChange } from '@angular/material/select';
 
 declare var $: any;
 
@@ -11,7 +13,10 @@ declare var $: any;
 export class AppComponent implements OnInit {
   title = 'bernard-geraud';
 
-  constructor() {
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+    translate.use(translate.getBrowserLang() ?? 'en');
+
     const firebaseConfig = {
       apiKey: "AIzaSyAwmvzgxebTwJbDUrxAtiC0446xwzjaOng",
       authDomain: "myapp-29fa0.firebaseapp.com",
@@ -39,5 +44,10 @@ export class AppComponent implements OnInit {
 
       $('.container').css('min-height', containerHeight+'px');
     });
+  }
+
+  changeLang(event: MatSelectChange) {
+    this.translate.use(event.value);
+    this.ngOnInit();
   }
 }

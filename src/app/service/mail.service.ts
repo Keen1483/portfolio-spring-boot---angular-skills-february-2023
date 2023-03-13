@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Mail } from '../model/mail.model';
 import { Subject } from 'rxjs';
 import { MainService } from './main.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,8 @@ export class MailService {
   apiBaseUrl = 'https://myapp-29fa0-default-rtdb.firebaseio.com';
 
   constructor(private httpClient: HttpClient,
-              private mainService: MainService) { }
+              private mainService: MainService,
+              private translate: TranslateService) { }
 
   emitMailSubject() {
     this.mailSubject$.next(this.mails.slice());
@@ -41,7 +43,7 @@ export class MailService {
     return this.httpClient.put<any>(this.apiBaseUrl + '/mails.json', this.mails).subscribe(
       response => {
         console.log('Mail save successfully');
-        this.mainService.openSnackBar('Mail saved successfully', 'Close');
+        this.mainService.openSnackBar(this.translate.instant('contact.snackbar_label'), this.translate.instant('contact.snackbar_action'));
       },
       error => {
         console.log('Error: ' + error);

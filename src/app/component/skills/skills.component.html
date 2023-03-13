@@ -1,6 +1,6 @@
 <div>
-    <h2 class="mat-display-2">Skills</h2>
-    Programming is my hobby. I had learned several programming languages, but in order to satisfy my clients quickly and efficiently, I focused on three of them. Thus, for the development of backend applications, I use:
+    <h2 class="mat-display-2">{{ 'skills.title' | translate }}</h2>
+    {{ 'skills.summary' | translate }} {{ 'skills.summary_focus' | translate }}
     <ul>
         <li>
             <mat-icon>check_circle</mat-icon>
@@ -18,9 +18,9 @@
             <mat-icon>check_circle</mat-icon>
             Hibernate
         </li>
-        <span>All assisted by the Spring Boot framework</span>
+        <span>{{ 'skills.backend_framework' | translate }}</span>
     </ul>
-    For the development of frontend applications, I use:
+    {{ 'skills.frontend_label' | translate }}
     <ul>
         <li>
             <mat-icon>check_circle</mat-icon>
@@ -42,7 +42,7 @@
             <mat-icon>check_circle</mat-icon>
             CSS
         </li>
-        All assisted by the frameworks
+        {{ 'skills.frontend_framework' | translate }}
         <li>
             <mat-icon>check_circle</mat-icon>
             Angular
@@ -61,16 +61,16 @@
         </li>
     </ul>
     <p>
-        For unexpected needs on the realization of a project, I work occasionally and by necessity in PHP and Python.
+        {{ 'skills.occasionally_work' | translate }}
     </p>
 
-    <p>{{ mainService.thankMessage }}</p>
+    <p>{{ 'home.thank_message' | translate }}</p>
     <a
         routerLink="/contact"
         mat-button
-        matTooltip="Click to write a message"
+        matTooltip="{{ 'contact.tooltip_label' | translate }}"
         matTooltipShowDelay="500"
         matTooltipHideDelay="1000"
-        class="active">{{ mainService.contactLabel }}
+        class="active">{{ 'home.contact_me' | translate }}
     </a>
 </div>

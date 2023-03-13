@@ -1,31 +1,31 @@
 <div>
-    <h2 class="mat-display-2">Contact</h2>
+    <h2 class="mat-display-2">{{ 'contact.title' | translate }}</h2>
 
     <form>
         <div>
             <mat-form-field>
-                <mat-label>Email</mat-label>
+                <mat-label>{{ 'contact.email_label' | translate }}</mat-label>
                 <input matInput [formControl]="email">
-                <mat-hint align="end">Accept only valid email addresses</mat-hint>
+                <mat-hint align="end">{{ 'contact.email_hint' | translate }}</mat-hint>
             </mat-form-field>
         </div>
         <div>
             <mat-form-field>
-                <mat-label>Message</mat-label>
-                <textarea name="" id="" matInput [formControl]="message"></textarea>
-                <mat-hint align="end">Min 10 characters</mat-hint>
+                <mat-label>{{ 'contact.message_label' | translate }}</mat-label>
+                <textarea matInput [formControl]="message"></textarea>
+                <mat-hint align="end">{{ 'contact.message_hint' | translate }}</mat-hint>
             </mat-form-field>
         </div>
 
         <button
             type="submit"
             mat-button
-            matTooltip="Click to save your message"
+            matTooltip="{{ 'contact.submit_tooltip' | translate }}"
             matTooltipShowDelay="500"
             matTooltipHideDelay="1000"
             class="active"
             (click)="submitForm()"
-            [disabled]="email.invalid || message.invalid">Send
+            [disabled]="email.invalid || message.invalid">{{ 'contact.submit' | translate }}
         </button>
     </form>
 </div>

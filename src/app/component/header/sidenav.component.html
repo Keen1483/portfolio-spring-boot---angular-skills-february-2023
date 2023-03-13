@@ -1,7 +1,7 @@
 <mat-nav-list>
-    <a mat-list-item [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a>
-    <a mat-list-item [routerLink]="[ '/skills' ]" routerLinkActive="active">Skills</a>
-    <a mat-list-item [routerLink]="[ '/experiences' ]" routerLinkActive="active">Experiences</a>
-    <a mat-list-item [routerLink]="[ '/contact' ]" routerLinkActive="active">Contact</a>
+    <a mat-list-item [routerLink]="[ '/home' ]" routerLinkActive="active">{{ 'nav.home' | translate }}</a>
+    <a mat-list-item [routerLink]="[ '/skills' ]" routerLinkActive="active">{{ 'nav.skills' | translate }}</a>
+    <a mat-list-item [routerLink]="[ '/experiences' ]" routerLinkActive="active">{{ 'nav.experiences' | translate }}</a>
+    <a mat-list-item [routerLink]="[ '/contact' ]" routerLinkActive="active">{{ 'nav.contact' | translate }}</a>
     <a mat-list-item [routerLink]="[ '/mails' ]" routerLinkActive="active" *ngIf="authService.isLogged()">Mails</a>
 </mat-nav-list>

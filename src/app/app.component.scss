@@ -1,5 +1,6 @@
 $bg-color: #151E32;
 $text-color: #9ba2c2;
+$active-color: #52B09E;
 
 mat-sidenav-container {
     width: 100%;
@@ -28,6 +29,34 @@ mat-sidenav-container {
     @media (max-width: 576px) {
         width: 90%;
         padding: 2rem 0rem 0 0rem;
+    }
+
+    .language {
+        text-align: right;
+        font-size: 12px;
+        margin-right: -100px;
+
+        ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+            color: $active-color!important;
+            width: 100px;
+            height: 37px;
+            @media (max-width: 768px) {
+                width: 90px;
+            }
+            @media (max-width: 576px) {
+                width: 80px;
+            }
+        }
+        ::ng-deep .mat-form-field-label {
+            color: $active-color!important;
+        }
+
+        ::ng-deep .mat-select-value {    
+            color: $active-color!important;
+        }
+        ::ng-deep .mat-selected {    
+            color: $active-color!important;
+        }
     }
 }
 
