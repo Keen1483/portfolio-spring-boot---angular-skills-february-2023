@@ -13,7 +13,7 @@ export class MailService {
   mails: Mail[] = [];
   mailSubject$ = new Subject<Mail[]>();
 
-  apiBaseUrl = 'https://myapp-29fa0-default-rtdb.firebaseio.com';
+  apiBaseUrl = 'https://bernard-geraud-dongmo-default-rtdb.firebaseio.com/';
 
   constructor(private httpClient: HttpClient,
               private mainService: MainService,
